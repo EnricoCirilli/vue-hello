@@ -11,8 +11,8 @@ const app = Vue.createApp({
             inventory: 8,
             ingredients : ['Ingredienti:','Farine Biologiche', 'Acqua Filtrata','Pasta Madre', 'Sale Integrale'],
             variants: [
-                {id: 2234, color:'bianco', image:'assets/images/bianco.jpeg'},
-                {id: 2235, color:'integrale', image: 'assets/images/integrale.jpeg'},
+                {id: 2234, color:'green', image:'assets/images/bianco.jpeg'},
+                {id: 2235, color:'blue', image: 'assets/images/integrale.jpeg'},
             ]
         }
     },
