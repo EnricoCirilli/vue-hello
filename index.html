@@ -12,13 +12,18 @@
     <div id="app">
         <!-- The double curly braces allow us tho write JavaScript Expression  -->
        <h1>{{product}}</h1>
-       <p>taste  our {{product}} : </p>
-       <a :href="link">Buy You loaf</a>
-       <p v-if="inStock">In Stock</p>
+       <p>Prova i prodottti di {{product}} : </p>
+       <a :href="link">Compa il Pane di Campagna</a>
+       <p v-if="inventory > 10">In Stock</p>
+       <p v-else-if ="inventory <= 10 && inventory > 0">Gli Ultimi filoni rimasti!!</p>
        <p v-else>Out of stock</p>
+      
        <!-- short hand for v-bind -->
        <img :src="image" alt="">
-       
+
+       <ul>
+        <li v-for="ingredient in ingredients">{{ingredient}}</li>
+       </ul>
     </div>
 
 <!-- importing vue app-->

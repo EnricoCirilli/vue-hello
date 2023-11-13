@@ -4,10 +4,11 @@
 const app = Vue.createApp({
     data(){
         return{
-            product: 'SourdoughBread',
+            product: 'Forno Brisa',
             image: 'assets/images/sourdough.png',
             link : 'https://www.fornobrisa.it/it/2-forno-brisa',
-            inStock: false
+            inventory: 8,
+            ingredients : ['Ingredienti:','Farine Biologiche', 'Acqua Filtrata','Pasta Madre', 'Sale Integrale']
         }
     }
 })
