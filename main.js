@@ -5,10 +5,11 @@ const app = Vue.createApp({
     data(){
         return{
             cart: 0,
-            product: 'Forno Brisa',
+            product: 'Il Pane Buono',
+            brand: 'Forno Brisa',
             image: 'assets/images/bianco.jpeg',
             link : 'https://www.fornobrisa.it/it/2-forno-brisa',
-            inventory: 8,
+            inventory: 11,
             ingredients : ['Ingredienti:','Farine Biologiche', 'Acqua Filtrata','Pasta Madre', 'Sale Integrale'],
             variants: [
                 {id: 2234, color:'green', image:'assets/images/bianco.jpeg'},
@@ -22,6 +23,11 @@ const app = Vue.createApp({
         },
         updateImage(variantImage){
             this.image = variantImage
+        }
+    },
+    computed: {
+        title(){
+            return this.brand  + ' e ' + this.product
         }
     }
 })
