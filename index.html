@@ -12,8 +12,9 @@
     <div id="app">
         <!-- The double curly braces allow us tho write JavaScript Expression  -->
        <h1>{{product}}</h1>
-       <p>Sub/region of {{product}}</p>
-       <img v-bind:src="image" alt="">
+       <p>Sub-region of {{product}}</p>
+       <!-- short hand for v-bind -->
+       <img :src="image" alt="">
     </div>
 
 <!-- importing vue app-->
