@@ -22,15 +22,18 @@
       
        <!-- short hand for v-bind -->
        <img :src="image" alt="">
-
+       <!-- -for event -->
        <ul>
         <li v-for="ingredient in ingredients">{{ingredient}}</li>
        </ul>
+       <!-- key id @mouseover -->
+       <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)">{{variant.color}}</div>
+       <!-- v-on event -->
        <button class="button" v-on:click="addToCart">Add to cart</button>
        <div class="cart">Cart({{ cart }})</div>
     </div>
 
-<!-- importing vue app-->
+       <!-- importing vue app-->
     <script src="main.js"></script>
 
     <!-- Mount app-->
