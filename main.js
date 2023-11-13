@@ -1,5 +1,6 @@
 
-//the hearth of the view application
+//the heart of the view application
+
 const app = Vue.createApp({
     data(){
         return{
