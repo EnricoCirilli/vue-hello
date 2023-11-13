@@ -12,8 +12,10 @@
     <div id="app">
         <!-- The double curly braces allow us tho write JavaScript Expression  -->
        <h1>{{product}}</h1>
-       <p>Sub-region of {{product}} : </p>
-       <a :href="link">Scopri la Galliura</a>
+       <p>taste  our {{product}} : </p>
+       <a :href="link">Buy You loaf</a>
+       <p v-if="inStock">In Stock</p>
+       <p v-else>Out of stock</p>
        <!-- short hand for v-bind -->
        <img :src="image" alt="">
        

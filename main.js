@@ -4,9 +4,10 @@
 const app = Vue.createApp({
     data(){
         return{
-            product: 'Sardinia',
-            image: 'assets/images/sardegna.png',
-            link : 'https://it.wikipedia.org/wiki/Gallura'
+            product: 'SourdoughBread',
+            image: 'assets/images/sourdough.png',
+            link : 'https://www.fornobrisa.it/it/2-forno-brisa',
+            inStock: false
         }
     }
 })
