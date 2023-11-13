@@ -4,7 +4,7 @@ const app = Vue.createApp({
     data(){
         return{
             product: 'Sardinia',
-            image: 'assets/images/sardegna.jpeg'
+            image: 'assets/images/sardegna.png'
         }
     }
 })
